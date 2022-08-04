@@ -50,6 +50,7 @@ module.exports = {
       // },
       saveDeployments: true,
       chainId: 42,
+      blockConfirmatios: 6,
     },
     rinkeby: {
       url: RINKEBY_RPC_URL,
@@ -59,6 +60,7 @@ module.exports = {
       //   },
       saveDeployments: true,
       chainId: 4,
+      blockConfirmatios: 6,
     },
     mainnet: {
       url: MAINNET_RPC_URL,
@@ -68,12 +70,14 @@ module.exports = {
       //   },
       saveDeployments: true,
       chainId: 1,
+      blockConfirmatios: 6,
     },
     polygon: {
       url: POLYGON_MAINNET_RPC_URL,
       accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
       saveDeployments: true,
       chainId: 137,
+      blockConfirmatios: 6,
     },
   },
   etherscan: {
